@@ -1,0 +1,8 @@
+lb x1 3(x0) // ricordati di mettere un valore nella 4° locazione memoria (il vaolore iniziale del contatore)
+lb x2 0(x0) // ricordati di mettere un valore nella 1° locazione memoria (il passo)
+
+:loop
+beq x1 x0 3 // :fine
+	sub x1 x1 x2
+beq x0 x0 -2 // :loop
+:fine
